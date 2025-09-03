@@ -66,6 +66,32 @@ python simple_trainer.py \
     --test_every 8
 ```
 
+### Advanced Configuration
+
+For fine-tuning the training process, you can adjust additional parameters:
+
+```bash
+python simple_trainer.py \
+    --data_dir /path/to/your/data \
+    --result_dir results/your_scene \
+    --max_steps 40000 \
+    --warm_up 3000 \
+    --position_lr_init 1.6e-4 \
+    --position_lr_final 1.6e-6 \
+    --sh_degree 3 \
+    --lambda_dssim 0.2 \
+    --init_opa 0.1 \
+    --init_scale 1.0
+```
+
+Key parameters:
+- `--warm_up`: Number of warmup steps (default: 3000)
+- `--position_lr_init/final`: Learning rate schedule for position optimization
+- `--sh_degree`: Spherical harmonics degree for appearance modeling (default: 3)
+- `--lambda_dssim`: Weight for DSSIM loss (default: 0.2)
+- `--depth_loss`: Enable depth supervision (default: False)
+- `--is_6dof`: Use 6DoF deformation (default: False)
+
 ### Data Format
 
 The input data should be organized in COLMAP format with temporal sequences:
