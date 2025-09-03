@@ -77,6 +77,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [3D Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/)
 - [4D Gaussian Splatting](https://guanjunwu.github.io/4dgs/)
 - [GSplat Library](https://github.com/nerfstudio-project/gsplat)
-- [Nerfstudio](https://github.co
+- [Nerfstudio](https://github.com/nerfstudio-project/nerfstudio)
 
   
